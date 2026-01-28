@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PizzaFuture - The Future of Slice</title>
+    
+    <!-- Google Fonts: Outfit -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Phosphor Icons -->
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+  </head>
+  <body>
+    <div id="app">
+      <header class="header">
+        <div class="logo">
+          <i class="ph-fill ph-pizza"></i>
+          <span>PizzaFuture</span>
+        </div>
+        <nav class="nav">
+          <a href="#menu">Menu</a>
+          <a href="#about">About</a>
+          <a href="#contact">Contact</a>
+        </nav>
+      </header>
+
+      <main>
+        <section id="hero" class="hero">
+          <div class="hero-content">
+            <h1>Taste the <span class="gradient-text">Future</span></h1>
+            <p>Experience the most delicious pizza on the planet, ordered instantly via our AI chef.</p>
+            <button class="btn btn-primary" id="order-now-btn">Order Now</button>
+          </div>
+          <div class="hero-image">
+             <!-- Placeholder or generated image? Using a div for now to style with background or emoji -->
+             <div class="floating-pizza">🍕</div>
+          </div>
+        </section>
+
+        <section id="features" class="features">
+            <div class="feature-card">
+                <i class="ph ph-rocket-launch"></i>
+                <h3>Fast Delivery</h3>
+                <p>Hot and fresh in under 30 minutes.</p>
+            </div>
+             <div class="feature-card">
+                <i class="ph ph-robot"></i>
+                <h3>AI Powered</h3>
+                <p>Order seamlessly with our smart bot.</p>
+            </div>
+             <div class="feature-card">
+                <i class="ph ph-leaf"></i>
+                <h3>Fresh Ingredients</h3>
+                <p>Locally sourced, organic produce.</p>
+            </div>
+        </section>
+      </main>
+
+      <div id="chatbot-container" class="chatbot-container hidden">
+        <div class="chat-header">
+            <div class="chat-title">
+                <i class="ph-fill ph-robot"></i>
+                <span>Chef Bot</span>
+            </div>
+            <button id="close-chat" class="icon-btn"><i class="ph ph-x"></i></button>
+        </div>
+        <div class="chat-messages" id="chat-messages">
+            <!-- Messages go here -->
+        </div>
+        <div class="chat-input-area">
+             <div class="chat-options" id="chat-options">
+                 <!-- Option buttons go here -->
+             </div>
+             <!-- Using options mostly, but maybe an input for fun? 
+                  Plan says "Simple decision tree", implying buttons mainly. -->
+        </div>
+      </div>
+
+      <button id="chatbot-fab" class="chatbot-fab">
+        <i class="ph-fill ph-chat-circle-dots"></i>
+      </button>
+    </div>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
